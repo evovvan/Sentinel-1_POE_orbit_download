@@ -7,6 +7,6 @@ Using:
 Python script for downloading the Sentinel-1 orbit data
 
 
-*1) Change the variable "work_path" to your own work_path, the work path should have the folder "RAW" where the
+*1) Change the variable "work_path" at Line 24 as your own work_path, the work path should have the folder "RAW" where the
    unzipped S1A data are putted
-*2) run "python sentinel_poe_download.py"
+*2) run "python3 sentinel_poe_download.py"

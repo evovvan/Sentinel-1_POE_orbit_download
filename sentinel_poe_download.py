@@ -5,14 +5,15 @@
 # ESSC @ The Chinese University of Hong Kong	
 # Aug-08, 2016	   
 ############################################################
+############################################################
+#"""
+#Python script for downloading the Sentinel-1 orbit data
 
-"""
-Python script for downloading the Sentinel-1 orbit data
-
-1) Change the variable "work_path" to your own work_path, the work path
-   should have the folder "RAW" where the unzipped S1A data are putted
-2) run "python sentinel_poe_download.py"    
-"""
+# 1) Change the variable "work_path" to your own work_path, the work path
+#   should have the folder "RAW" where the unzipped S1A data are putted
+# 2) this script: “python3 sentinel_poe_download.py”   
+#"""
+###############################################################
 
 import datetime
 import urllib.request

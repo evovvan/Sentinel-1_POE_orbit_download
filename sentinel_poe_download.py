@@ -11,7 +11,7 @@
 
 # 1) Change the variable "work_path" to your own work_path, the work path
 #   should have the folder "RAW" where the unzipped S1A data are putted
-# 2) this script: “python3 sentinel_poe_download.py”   
+# 2) run this script: “python3 sentinel_poe_download.py”   
 #"""
 ###############################################################
 

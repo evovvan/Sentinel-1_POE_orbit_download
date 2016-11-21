@@ -1,17 +1,21 @@
-#!/root/.pyenv/versions/anaconda3-2.4.0/bin/python
+#!/usr/bin/python3
 
 ############################################################
 # V1.0 by Xiaowen Wang                         
 # ESSC @ The Chinese University of Hong Kong	
 # Aug-08, 2016	   
 ############################################################
-############################################################
 #"""
 #Python script for downloading the Sentinel-1 orbit data
+#
+#  Please make sure the python3 has been isntalled in the OS, if not:
+#                 sudo apt-get install python3                 
+# #############################################################   
 
-# 1) Change the variable "work_path" to your own work_path, the work path
+# 1) Change the variable "work_path" at Line 29 to your own work_path, the work path
 #   should have the folder "RAW" where the unzipped S1A data are putted
-# 2) run this script: “python3 sentinel_poe_download.py”   
+
+# 2) run this script: python3 sentinel_poe_download.py   
 #"""
 ###############################################################
 
@@ -22,7 +26,7 @@ import re
 import os
 ##############################################################################
 # work_path and variables setting
-work_path="/media/root/G/KunlunShan_S1A"
+work_path="/media/root/G/test"
 
 POE_path=work_path+"/POE"
 RAW_path=work_path+"/RAW"
@@ -36,7 +40,7 @@ else:
     os.popen('mkdir $POE_path')
 
 # List the raw list data 
-im_list=os.popen('ls $RAW_path | grep ^S1A.*SAFE$').read().split()
+im_list=os.popen('ls $RAW_path | grep ^S1.*SAFE$').read().split()
 
 ######################
 for im_var in im_list:

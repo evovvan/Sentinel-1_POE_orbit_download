@@ -79,7 +79,7 @@ for im_var in im_list:
     pat_mat=pat.search(str(cont));
     
     if pat_mat is None:
-        print("****The precise oribt data for this image is not avaible now****")
+        print("****The precise oribt data for this image is not available now****")
         continue
     else:    
         mat=pat_mat.group()
@@ -87,7 +87,7 @@ for im_var in im_list:
         print();print(POE_name);print()
         POE_file=POE_path+'/'+POE_name
         if  os.path.exists(POE_file):
-            print("****The orbit file has been download already****")
+            print("****The orbit file for this scene has been downloaded already****")
             continue
         else:
             dl_head="https://qc.sentinel1.eo.esa.int/aux_poeorb//"

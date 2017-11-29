@@ -90,10 +90,12 @@ for im_var in im_list:
             print("****The orbit file for this scene has been downloaded already****")
             continue
         else:
-            dl_head="https://qc.sentinel1.eo.esa.int/aux_poeorb//"
+            dl_head="https://qc.sentinel1.eo.esa.int/aux_poeorb/"
             dl_url=dl_head+POE_name;
-            data_tmp=urllib.request.urlopen(dl_url,context=ctx)
-            data_w=data_tmp.read()
-            with open(POE_file, "wb") as flg:     
-                flg.write(data_w)
+            cmd='wget '+'-P '+POE_path+' '+dl_url+' --no-check-certificate'
+            subprocess.call(cmd,shell=True)
+#            data_tmp=urllib.request.urlopen(dl_url,context=ctx)
+#            data_w=data_tmp.read()
+#            with open(POE_file, "wb") as flg:     
+#                flg.write(data_w)
 ##############################################################################

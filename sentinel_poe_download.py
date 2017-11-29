@@ -24,6 +24,7 @@ import urllib.request
 import ssl
 import re
 import os
+import subprocess
 ##############################################################################
 # work_path and variables setting
 work_path="/media/root/G/test"
